@@ -1,0 +1,22 @@
+[project]
+name = "football-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "akash raghuvanshi", email = "akashraghuvanshitech.x@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "joblib==1.6.0",
+    "scikit-learn==1.6.1",
+    "streamlit>=1.64.0",
+    "xgboost==3.4.1",
+]
+
+[project.scripts]
+football-project = "football_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
